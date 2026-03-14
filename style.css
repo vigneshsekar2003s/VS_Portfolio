@@ -13,23 +13,13 @@ header{
 background-image:url("css/Background-img.jpg");
 background-size:cover;
 padding: 100px 0;
-<<<<<<< HEAD
 width: 100%;
-=======
-width:100%;    
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
 }
 
 .logo{
 color:white;
 font-size:28px;
 font-weight:bold;
-}
-
-ul{
-display:flex;
-list-style:none;
-gap:30px;
 }
 
 ul li{
@@ -87,6 +77,7 @@ body{
 margin:0;
 font-family: Arial, sans-serif;
 padding:0;
+overflow-x:hidden;
 }
 
 .navbar{
@@ -98,12 +89,7 @@ position:fixed;
 top:0;
 width:100%;
 z-index:1000;
-}
-
-.logo{
-color:white;
-font-size:28px;
-font-weight:bold;
+background:transparent;    
 }
 
 .nav-links{
@@ -254,16 +240,11 @@ margin-top:10px;
     padding-left:20px;
     display:flex;
     gap:20px;
-    list-style:none
+    list-style:none;
 }
 
 .tech-list li{
     margin-bottom:8px;
-}
-
-.skill-card:hover{
-transform: translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .projects-section{
@@ -602,13 +583,13 @@ background:#f5f5f5;
   cursor:pointer;
 }
 
-.nav-links{
-  list-style:none;
-}
-
-<<<<<<< HEAD
+/*Mobile Menu*/
 @media (max-width:768px){
 
+.menu-toggle{
+display:block;
+}
+    
 .nav-links{
   display:none;
   flex-direction:column;
@@ -617,35 +598,14 @@ background:#f5f5f5;
   top:70px;
   right:0;
   width:200px;
-=======
-.nav-links{
-  list-style:none;
-}
-
-@media (max-width:768px){
-
-.nav-links{
-display:none;
-flex-direction:column;
-width:200px;
-text-align:center;
-background:black;
-padding:20px 0;
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
+  text-align:center;
+  padding:20px 0;
 }
 
 .nav-links.active{
   display:flex;
 }
 
-.menu-toggle{
-<<<<<<< HEAD
-  display:block;
 }
 
-}
-=======
-display:block;
-}
-}
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
+
