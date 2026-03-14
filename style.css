@@ -10,7 +10,7 @@ scroll-behavior:smooth;
 }
 
 header{
-background-image:url(../css/background-img.jpg);
+background-image:url("/Background-img.jpg");
 background-size:cover;
 padding: 100px 0;
 }
