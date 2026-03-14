@@ -13,6 +13,7 @@ header{
 background-image:url("css/Background-img.jpg");
 background-size:cover;
 padding: 100px 0;
+width:100%;    
 }
 
 .logo{
@@ -81,6 +82,7 @@ font-size:16px;
 body{
 margin:0;
 font-family: Arial, sans-serif;
+padding:0;
 }
 
 .navbar{
@@ -596,16 +598,16 @@ color:white;
 cursor:pointer;
 }
 
-@media (max-width:768px){
-
-.menu-toggle{
-display:block;
+.nav-links{
+  list-style:none;
 }
+
+@media (max-width:768px){
 
 .nav-links{
 display:none;
 flex-direction:column;
-width:100%;
+width:200px;
 text-align:center;
 background:black;
 padding:20px 0;
@@ -613,5 +615,9 @@ padding:20px 0;
 
 .nav-links.active{
 display:flex;
+}
+
+.menu-toggle{
+display:block;
 }
 }
