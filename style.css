@@ -13,11 +13,7 @@ header{
 background-image:url("css/Background-img.jpg");
 background-size:cover;
 padding: 100px 0;
-<<<<<<< HEAD
-width: 100%;
-=======
-width:100%;    
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
+width: 100%;   
 }
 
 .logo {
@@ -620,7 +616,6 @@ footer {
   list-style:none;
 }
 
-<<<<<<< HEAD
 @media (max-width:768px){
 
 .nav-links{
@@ -631,9 +626,10 @@ footer {
   top:70px;
   right:0;
   width:200px;
-=======
+}
 .nav-links{
   list-style:none;
+}
 }
 
 @media (max-width:768px){
@@ -645,7 +641,6 @@ width:200px;
 text-align:center;
 background:black;
 padding:20px 0;
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
 }
 
 .nav-links.active{
@@ -653,13 +648,10 @@ padding:20px 0;
 }
 
 .menu-toggle{
-<<<<<<< HEAD
   display:block;
 }
 
 }
-=======
-display:block;
-}
-}
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
+
+
+
