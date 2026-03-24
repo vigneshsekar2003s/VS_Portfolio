@@ -12,13 +12,21 @@ html {
 header{
 background-image:url("css/Background-img.jpg");
 background-size:cover;
-padding: 100px 0;
-width: 100%;   
+background-position: center;
+display: flex;              
+flex-direction: column;     
+justify-content: center;    
+align-items: center;  
+padding: 0;
+width: 100%;
+text-align: center;
+position: relative;
+min-height: 100vh;     
 }
 
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -28,8 +36,11 @@ ul li {
 }
 
 .hero {
-    text-align: center;
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .profile {
@@ -90,7 +101,6 @@ body {
     width: 100%;
     z-index: 1000;
     background:transparent;
-    align-items: center;
 }
 
 .nav-links {
@@ -115,9 +125,29 @@ body {
     color: #00c3ff;
 }
 
-.hero h1 {
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative; 
+}
+
+.hero-content h1 {
     color: white;
-    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: white;
+    font-weight: bold;
+}
+
+.connect-btn {
+    margin-top: 10px;
 }
 
 .about-section {
@@ -427,23 +457,6 @@ p {
     background: #333;
 }
 
-#contact form {
-    width: 50%;
-    margin: auto;
-}
-
-
-
-  .contact form {
-    width: 90%;
-  }
-
-  .contact input,
-  .contact textarea {
-    width: 100%;
-  }
-
-
 /* Animation Keyframes */
 @keyframes fadeUp {
     from {
@@ -589,11 +602,6 @@ p {
         width: 100%;
     }
 
-    .hero {
-        margin-top: 100px;
-    }
-
-
 footer {
     text-align: center;
     padding: 20px 10px;
@@ -606,7 +614,7 @@ footer {
 
 .menu-toggle {
   display: none;
-  font-size: 30px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
  
@@ -653,5 +661,15 @@ padding:20px 0;
 
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
 
 
