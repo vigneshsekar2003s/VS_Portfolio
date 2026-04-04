@@ -12,17 +12,21 @@ html {
 header{
 background-image:url("css/Background-img.jpg");
 background-size:cover;
-padding: 100px 0;
-<<<<<<< HEAD
+background-position: center;
+display: flex;              /* ADD THIS */
+flex-direction: column;     /* ADD */
+justify-content: center;    /* VERTICAL CENTER */
+align-items: center;  
+padding: 0;
 width: 100%;
-=======
-width:100%;    
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
+text-align: center;
+position: relative;
+min-height: 100vh;    
 }
 
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -31,10 +35,6 @@ ul li {
     font-size: 15px;
 }
 
-.hero {
-    text-align: center;
-    margin-top: 80px;
-}
 
 .profile {
     width: 150px;
@@ -44,10 +44,6 @@ ul li {
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 22px;
-    font-weight: 300;
-}
 
 span {
     font-weight: bold;
@@ -81,6 +77,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     padding: 0;
+
 }
 
 .navbar {
@@ -94,7 +91,6 @@ body {
     width: 100%;
     z-index: 1000;
     background:transparent;
-    align-items: center;
 }
 
 .nav-links {
@@ -119,9 +115,30 @@ body {
     color: #00c3ff;
 }
 
-.hero h1 {
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+}
+
+.hero-content h1 {
     color: white;
-    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: white;
+    font-weight: bold;
+}
+
+.connect-btn {
+    margin-top: 10px;
 }
 
 .about-section {
@@ -431,22 +448,6 @@ p {
     background: #333;
 }
 
-#contact form {
-    width: 50%;
-    margin: auto;
-}
-
-
-
-  .contact form {
-    width: 90%;
-  }
-
-  .contact input,
-  .contact textarea {
-    width: 100%;
-  }
-
 
 /* Animation Keyframes */
 @keyframes fadeUp {
@@ -563,16 +564,17 @@ p {
     transform: scale(1.05);
 }
 
-    .about-text,
-    .about-image {
-        width: 100%;
-    }
 
     @media (max-width:768px) {
 
     .about-container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
     }
 
     .skills-container {
@@ -593,11 +595,6 @@ p {
         width: 100%;
     }
 
-    .hero {
-        margin-top: 100px;
-    }
-
-
 footer {
     text-align: center;
     padding: 20px 10px;
@@ -610,7 +607,7 @@ footer {
 
 .menu-toggle {
   display: none;
-  font-size: 30px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
  
@@ -620,7 +617,6 @@ footer {
   list-style:none;
 }
 
-<<<<<<< HEAD
 @media (max-width:768px){
 
 .nav-links{
@@ -631,21 +627,8 @@ footer {
   top:70px;
   right:0;
   width:200px;
-=======
-.nav-links{
   list-style:none;
-}
 
-@media (max-width:768px){
-
-.nav-links{
-display:none;
-flex-direction:column;
-width:200px;
-text-align:center;
-background:black;
-padding:20px 0;
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
 }
 
 .nav-links.active{
@@ -653,13 +636,19 @@ padding:20px 0;
 }
 
 .menu-toggle{
-<<<<<<< HEAD
+
   display:block;
 }
 
 }
-=======
-display:block;
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+section {
+  width: 100%;
+  overflow: hidden;
 }
->>>>>>> 8f3732facb6f3bfd55be332cc17efd112497b25c
